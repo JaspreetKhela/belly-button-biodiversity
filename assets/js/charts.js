@@ -89,9 +89,9 @@ function buildCharts(sample) {
         // console.log(metadataDetails);
 
         // 1.6. Create variables that hold the otuIds, otuLabels, and sampleValues
-        var otuIds = samplesDetails.otuIds;
-        var otuLabels = samplesDetails.otuLabels;
-        var sampleValues = samplesDetails.sampleValues;
+        var otuIds = samplesDetails.otu_ids;
+        var otuLabels = samplesDetails.otu_labels;
+        var sampleValues = samplesDetails.sample_values;
         console.log(otuIds);
         // console.log(otuLabels);
         // console.log(sampleValues);
