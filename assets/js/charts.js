@@ -9,7 +9,7 @@ function init() {
     var selector = d3.select("#selDataset");
   
     // Use the list of sample names to populate the select options
-    d3.json("assets/data/samples.json").then((data) => {
+    d3.json("./assets/data/samples.json").then((data) => {
         var sampleNames = data.names;
 
         // For each sample name, append an option within the sample HTML element
@@ -42,7 +42,7 @@ function optionChanged(newSample) {
 // Define a function to build the demographics panel 
 function buildMetadata(sample) {
     // Import the samples.json data
-    d3.json("assets/data/samples.json").then((data) => {
+    d3.json("./assets/data/samples.json").then((data) => {
         // Extract the metadata key's values from the imported JSON data
         var metadata = data.metadata;
 
@@ -69,7 +69,7 @@ function buildMetadata(sample) {
 // 1.1. Create the buildCharts function
 function buildCharts(sample) {
     // 1.2. Use d3.json to load and retrieve the samples.json file 
-    d3.json("assets/data/samples.json").then((data) => {
+    d3.json("./assets/data/samples.json").then((data) => {
         // 1.3. Create a variable that holds the samples array
         var samplesRaw = data.samples;
 
