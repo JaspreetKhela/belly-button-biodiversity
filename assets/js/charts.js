@@ -82,7 +82,7 @@ function buildCharts(sample) {
 
         //  1.5. Create a variable that holds the first sample in the array
         var samplesDetails = samplesArray[0];
-        //console.log(samplesDetails);
+        console.log(samplesDetails);
 
         //  3.2. Create a variable that holds the first sample in the metadata array
         var metadataDetails = metadataArray[0];
@@ -92,7 +92,7 @@ function buildCharts(sample) {
         var otuIds = samplesDetails.otuIds;
         var otuLabels = samplesDetails.otuLabels;
         var sampleValues = samplesDetails.sampleValues;
-        // console.log(otuIds);
+        console.log(otuIds);
         // console.log(otuLabels);
         // console.log(sampleValues);
 
